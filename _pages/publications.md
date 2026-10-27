@@ -13,8 +13,18 @@ nav_order: 1
 
 {% include bib_search.liquid %}
 
+## Journal and conference papers
+
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query @*[journal!~arXiv] %}
+
+</div>
+
+## Preprints
+
+<div class="publications">
+
+{% bibliography --query @*[journal~=arXiv] %}
 
 </div>

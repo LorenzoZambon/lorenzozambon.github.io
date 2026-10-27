@@ -2,7 +2,7 @@
 layout: page
 permalink: /software/
 title: software
-description: Open-source software for probabilistic forecast reconciliation.
+description: Open-source software for probabilistic forecasting and forecast reconciliation.
 nav: true
 nav_order: 2
 ---
@@ -25,4 +25,35 @@ Python package for probabilistic forecast reconciliation of real-valued, discret
 
 ```bash
 pip install bayesreconpy
+```
+
+### fable.bayesRecon (R)
+
+Bayesian reconciliation in the fable framework.
+
+[CRAN](https://CRAN.R-project.org/package=fable.bayesRecon)
+
+```r
+install.packages("fable.bayesRecon")
+```
+
+### fable.intermittent (R)
+
+Forecasting models for intermittent time series, in the fable framework.
+
+[CRAN](https://CRAN.R-project.org/package=fable.intermittent) · [Paper (arXiv)](https://arxiv.org/abs/2609.28607)
+
+```r
+install.packages("fable.intermittent")
+```
+
+### BayesETS (R)
+
+Bayesian exponential smoothing (ETS) models that account for both parameter and model uncertainty.
+
+[GitHub](https://github.com/LorenzoZambon/BayesETS)
+
+```r
+# install.packages("remotes")
+remotes::install_github("LorenzoZambon/BayesETS")
 ```
