@@ -9,22 +9,18 @@ nav_order: 1
 
 <!-- _pages/publications.md -->
 
-<!-- Bibsearch Feature -->
+## Preprints
 
-{% include bib_search.liquid %}
+<div class="publications">
+
+{% bibliography --query @*[journal~=arXiv] %}
+
+</div>
 
 ## Journal and conference papers
 
 <div class="publications">
 
 {% bibliography --query @*[journal!~arXiv] %}
-
-</div>
-
-## Preprints
-
-<div class="publications">
-
-{% bibliography --query @*[journal~=arXiv] %}
 
 </div>
